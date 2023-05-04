@@ -99,7 +99,7 @@ public class Run {
         String unit = scanner.nextLine();
         
 
-        return new Ingredient(name, amount, unit);
+        return new IngredientBuilder().setAmount(amount).setName(name).setUnit(unit).build()
     }
 
 }
